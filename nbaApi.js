@@ -29,10 +29,12 @@ enterButton.addEventListener('click', function(){
     this.state={
         playerName: null,
         playerStats: {}
-    }
+    }})
+})
+    
 
 
-let handleSubmit = (e) => {
+let handleSubmitFunction = (e) => {
     e.preventDefault();
     this.getPlayerId()
     console.log(this.state.playerName)
@@ -72,3 +74,4 @@ let getPlayerId = () => {
          }).catch(err => {
          console.log(err)
      })
+    }
